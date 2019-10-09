@@ -7,29 +7,30 @@
   "author": "Victor Lawrence <VictorLawrenceCode@gmail.com>",
   "homepage": "./",
   "license": "MIT",
-  "build":{
+  "build": {
     "appId": "com.goodnovember",
-    "files":[
+    "files": [
       "src/electron.js",
       "src/assets/*",
       "build/**/*"
     ],
-    "mac":{
-      "target":"dmg",
+    "mac": {
+      "target": "dmg",
       "icon": "src/assets/logo.png"
     },
-    "win":{
-      "target":"nsis",
-      "icon":"src/assets/logo.png"
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/logo.png"
     },
-    "linux":{
-      "target":"deb",
-      "icon":"src/assets/logo.png",
-      "category":"Development"
+    "linux": {
+      "target": "deb",
+      "icon": "src/assets/logo.png",
+      "category": "Development"
     }
   },
   "dependencies": {
     "electron-is-dev": "^1.1.0",
+    "nodegit": "^0.26.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "std-env": "^2.2.1",
